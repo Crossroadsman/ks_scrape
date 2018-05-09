@@ -19,13 +19,14 @@ print(r.headers)
 # (content is the content in bytes; text is the content in unicode)
 c = r.content
 t = r.text
+encoding = r.encoding
 
 # Now do the parsing with beautiful soup
 parser = 'html.parser'
 soup = bs4.BeautifulSoup(c, parser)
 
 # We can see the html in a minimally prettified way:
-pretty = soup.prettify()
+pretty = soup.prettify(encoding)
 print(pretty)
 
 # We can look at the paragraphs:
