@@ -1,3 +1,7 @@
+'''
+requests is available on pip
+homepage: http://docs.python-requests.org/en/master/
+'''
 import requests
 
 def print_details(request):
@@ -33,4 +37,4 @@ if __name__ == "__main__":
 
     r = requests.get('https://api.github.com/events')
     print(r)
-    print_details(request)
+    print_details(r)
