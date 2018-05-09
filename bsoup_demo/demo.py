@@ -16,7 +16,9 @@ print(r.status_code)
 print(r.headers)
 
 # Store the content in a variable
+# (content is the content in bytes; text is the content in unicode)
 c = r.content
+t = r.text
 
 # Now do the parsing with beautiful soup
 parser = 'html.parser'
