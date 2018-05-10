@@ -35,6 +35,7 @@ def print_details(request):
 
 if __name__ == "__main__":
 
-    r = requests.get('https://api.github.com/events')
+    url = 'http://gregminuskin.com'
+    r = requests.get(url)
     print(r)
     print_details(r)
